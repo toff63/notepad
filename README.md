@@ -10,4 +10,5 @@ Technical notes to ease my life :)
 
 ## Notes
 
+- *2019-06-10* [test_connectivity_with_telnet](./test_connectivity_with_telnet)
 - *2018-12-10* [terraform_aws_secret](./terraform_aws_secret)
