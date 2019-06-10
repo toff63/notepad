@@ -1,14 +1,13 @@
-# Precis
+# Notepad
 
-Precis is a minimal note taking web-app built over Github Pages. This website itself is built using Precis. Look at the notes below to learn about it.
+Technical notes to ease my life :)
 
 ## Tags
 
-- [demo](./tags/demo)
-- [documentation](./tags/documentation)
+- [aws](./tags/aws)
+- [secret](./tags/secret)
+- [terraform](./tags/terraform)
 
 ## Notes
 
-- *2019-06-07* [introduction](./introduction)
-- *2019-06-06* [setup](./setup)
-- *2019-06-05* [demo-note](./demo-note)
+- *2018-12-10* [terraform_aws_secret](./terraform_aws_secret)
