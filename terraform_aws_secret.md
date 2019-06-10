@@ -14,4 +14,29 @@ I need to store secrets and retrieve them when building my infrastructure using 
 
 The following gist shows a terraform retrieving a secret by its arn giving its value to the variable `test`.
 
-<script src="https://gist.github.com/toff63/d501769a5fbde788a42056652c63240d.js"></script>
+```bash
+variable "region" {}
+variable "access_key" {}
+variable "secret_key" {}
+
+provider "aws" {
+  version    = "~> 1.25"
+  region     = "${var.region}"
+  access_key = "${var.access_key}"
+  secret_key = "${var.secret_key}"
+}
+
+
+data "aws_secretsmanager_secret" "by-arn" {
+  arn = "arn:aws:secretsmanager:eu-west-1:xxxxxxx:secret:my_secret"
+}
+
+data "aws_secretsmanager_secret_version" "by-version-stage" {
+  secret_id = "${data.aws_secretsmanager_secret.by-arn.id}"
+}
+
+data "external" "json" {
+  program = ["echo", "${data.aws_secretsmanager_secret_version.by-version-stage.secret_string}"]
+}
+output "test" {value = "${data.external.json.result.test}"}
+```
