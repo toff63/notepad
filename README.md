@@ -20,7 +20,6 @@ Technical notes to ease my life :)
 
 ## Notes
 
-- **$DATE** [tags/journal.md:-](./tags/journal.md:-)
 - *2019-06-12* [journal-20190612](./journal-20190612)
 - *2019-06-11* [reset_rspec_mock](./reset_rspec_mock)
 - *2019-06-11* [map_filter_on_json](./map_filter_on_json)
