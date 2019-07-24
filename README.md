@@ -13,6 +13,7 @@ Technical notes to ease my life :)
 - [jq](./tags/jq)
 - [json](./tags/json)
 - [mock](./tags/mock)
+- [redis](./tags/redis)
 - [rspec](./tags/rspec)
 - [ruby](./tags/ruby)
 - [secret](./tags/secret)
@@ -22,6 +23,7 @@ Technical notes to ease my life :)
 
 ## Notes
 
+- *2019-07-24* [migrating_redis_keys](./migrating_redis_keys)
 - *2019-07-17* [sed_recipe](./sed_recipe)
 - *2019-06-12* [journal-20190612](./journal-20190612)
 - *2019-06-11* [reset_rspec_mock](./reset_rspec_mock)
